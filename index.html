@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logins - Verification</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Tutroia</h1>
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" required placeholder="Nome completo"/>
+            <div class="error-message" id="name-error">O nome deve conter pelo menos dois nomes.</div>
+            <input type="password" id="password" required placeholder="Senha"/>
+            <div class="error-message" id="password-error">A senha deve ter pelo menos 8 caracteres e conter pelo menos um caractere especial.</div>
+            <input type="password" id="confirm-password" required placeholder="Digite a senha novamente" style="display: none;"/>
+            <div class="error-message" id="confirm-password-error">As senhas não correspondem.</div>
+            <div id="show-passwords-container" style="display: none;">
+                <input type="checkbox" id="show-passwords">
+                <label for="show-passwords">Mostrar senhas</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
